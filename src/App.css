@@ -1,0 +1,65 @@
+.move-count {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #555;
+  font-weight: 500;
+}
+.tile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.fifteen-puzzle-container {
+  background: #fff;
+  padding: 0.5rem 2.5rem 2.5rem 2.5rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 32px #0001;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+}
+
+.puzzle-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 60px);
+  grid-template-rows: repeat(4, 60px);
+  gap: 10px;
+  margin: 1.5rem 0;
+}
+
+.tile {
+  width: 60px;
+  height: 60px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.5rem;
+  background: #e0e0e0;
+  color: #333;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: 0 2px 8px #0002;
+}
+.tile:active {
+  background: #bdbdbd;
+}
+.tile.empty {
+  background: #fff;
+  box-shadow: none;
+  cursor: default;
+}
+.controls {
+  margin-top: 1rem;
+}
+.win-message {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #388e3c;
+  font-weight: bold;
+}
